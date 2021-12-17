@@ -90,3 +90,20 @@ button
     background-color: #dedde7;
     border-radius: 25px;
 } */
+
+.tag
+{
+    transform: translateY(20vh);
+    font-size: 10px;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#result
+{
+    
+}

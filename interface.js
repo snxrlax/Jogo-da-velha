@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     squares.forEach((square)=>{
         square.addEventListener('click', handleClick);
     })
-})
+});
 
 function handleClick(event){
     console.log(event.target.id)
@@ -21,10 +21,10 @@ function handleClick(event){
 
     };
     updateSquare(position);
-}
+};
 
 function updateSquare(position){
     let square = document.getElementById(position.toString());
     let symbol = board[position];
     square.innerHTML = `<div class='${symbol}'></div>`
-}
+};
