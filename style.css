@@ -1,0 +1,92 @@
+/* Todo projeto do design do jogo pode ser acessado em:
+https://www.figma.com/file/JwHtndJZsRd4fbJWhgO353/
+Projeto-do-Curso-do-Programador-BR-%7C-Jogo-da-velha?node-id=0%3A1 */
+
+*
+{
+    /* Declarando variáveis de cores */
+    --color-first: #424242;
+    --color-second: #F2F1F9;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background-color: var(--color-second);
+}
+
+body
+{
+    height: 90vh;
+    width: 90%;
+}
+
+.center
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1
+{
+    color: var(--color-first);
+}
+
+.square
+{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-second);
+    border: 3px solid var(--color-first);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Jogador 1 é o emoji de circulo */
+
+.o{position: relative;}
+
+.o:after
+{
+    /* Importando emoji */
+    content: "\2B55";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    /* Como o objeto está em posição absoluta, colocando top, bottom, left e right em 0,
+    ele centraliza o nosso elemento em relação ao elemento Pai. */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Jogador 2 é o emoji de X */
+
+.x{position: relative;}
+
+.x:after
+{
+    content: "\274C";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+button
+{
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+/* Box do resultado do game
+#result
+{
+    width: 350px;
+    height: 100px;
+    background-color: #dedde7;
+    border-radius: 25px;
+} */
