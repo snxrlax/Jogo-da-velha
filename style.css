@@ -82,15 +82,6 @@ button
     border-radius: 15px;
 }
 
-/* Box do resultado do game
-#result
-{
-    width: 350px;
-    height: 100px;
-    background-color: #dedde7;
-    border-radius: 25px;
-} */
-
 .tag
 {
     transform: translateY(20vh);
@@ -101,9 +92,4 @@ a
 {
     text-decoration: none;
     color: black;
-}
-
-#result
-{
-    
 }

@@ -15,8 +15,8 @@ function handleClick(event){
     if (handleMove(position)) {
 
         setTimeout(() => {
-            alert("O jogo acabou! O vencedor foi " + playerTime);
-
+            let result = document.getElementById('result');
+            result.innerHTML = `<p>O jogo acabou! O vencedor foi o jogador ${playerTime}</p>`
         }, 25);
 
     };
